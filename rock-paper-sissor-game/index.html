@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class = "header">
+        <h1>Rock Paper Sissors</h1> 
+    </div>
+    <main>
+        <div class = "item-container">
+            <button id = "rock" class ="items"><div class = "item" ><i class="fa-regular fa-hand-back-fist"></i></div></button>
+            <button id = "paper" class ="items"><div class = "item"><i class="fa-regular fa-hand"></i></div></button>
+            <button id = "sissors" class ="items"><div class = "item"><i class="fa-regular fa-hand-scissors"></i></div></button>
+        </div>
+        <div class ="score-container">
+            <div class = "score">
+                <p id = "user-score">0</p>
+                <p>User</p>
+            </div>
+            <div class = "score">
+                <p id = "comp-score">0</p>
+                <p>Computer</p>
+            </div>
+        </div>
+        <div class = "message-container">
+            <div id = "msg">Pick Your Move</div>
+        </div>
+    </main>
+    <script src = "scripts.js"></script>
+</body>
+</html>
