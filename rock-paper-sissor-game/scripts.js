@@ -19,7 +19,7 @@ const play = (user_ch)=>{
     if(comp_ch==user_ch)
     {
         console.log("Its draw");
-        msg.innerText =`Game is Draw! You Both Choose ${user_ch}`;
+        msg.innerText =`Game is Draw! You Both Choose ${user_ch.toUpperCase()}`;
         msg.style.backgroundColor ="rgba(255, 255, 255,1)";
     }
     else if(comp_ch == "sissors" && user_ch == "rock" || comp_ch == "rock" && user_ch == "paper" ||comp_ch == "paper" && user_ch == "sissors" )
