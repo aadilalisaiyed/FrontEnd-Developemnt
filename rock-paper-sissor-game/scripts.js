@@ -19,13 +19,13 @@ const play = (user_ch)=>{
     if(comp_ch==user_ch)
     {
         console.log("Its draw");
-        msg.innerText ="Game is Draw!";
+        msg.innerText =`Game is Draw! You Both Choose ${user_ch}`;
         msg.style.backgroundColor ="rgba(255, 255, 255,1)";
     }
     else if(comp_ch == "sissors" && user_ch == "rock" || comp_ch == "rock" && user_ch == "paper" ||comp_ch == "paper" && user_ch == "sissors" )
     {
         console.log("You Win");
-        msg.innerText ="You WIN!";
+        msg.innerText =`You WIN! ${user_ch.toUpperCase()} beats ${comp_ch.toUpperCase()}`;
         msg.style.backgroundColor ="rgba(0, 255, 0,0.5)";
         user++; 
         my_score.innerText=user;
@@ -33,7 +33,7 @@ const play = (user_ch)=>{
     else
     {
         console.log("You Lose");
-        msg.innerText ="You LOSE!";
+        msg.innerText =`You LOSE! ${comp_ch.toUpperCase()} beats ${user_ch.toUpperCase()}`;
         msg.style.backgroundColor ="rgba(255, 0, 0,0.5)";
         comp++; 
         comp_score.innerText=comp;
